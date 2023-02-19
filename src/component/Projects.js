@@ -3,7 +3,7 @@ import { Col, Container, Row, Tab } from "react-bootstrap";
 import projImg1 from "../assets/img/creativeAgency.png";
 import projImg2 from "../assets/img/edukito.png";
 import projImg3 from "../assets/img/eduvibe.png";
-import projImg4 from "../assets/img/travelguru.png";
+import projImg4 from "../assets/img/eduWell.png";
 import projImg5 from "../assets/img/redonion.png";
 import projImg6 from "../assets/img/patoRestaurent.png";
 import Tabs from "react-bootstrap/Tabs";
@@ -24,25 +24,25 @@ const Projects = () => {
       title: "EduKito",
       description: "Design & Development",
       imgUrl: projImg2,
-      link: "",
+      link: "https://edukito.vercel.app/",
     },
     {
       title: "EduVibe",
       description: "Design & Development",
       imgUrl: projImg3,
-      link: "",
+      link: "https://edu-vibe.vercel.app/",
     },
     {
-      title: "Travel Guru",
+      title: "EduWell",
       description: "Design & Development",
       imgUrl: projImg4,
-      link: "",
+      link: "https://edu-well-rho.vercel.app/",
     },
     {
       title: "Red Onion",
       description: "Design & Development",
       imgUrl: projImg5,
-      link: "",
+      link: "https://red-onion-eosin.vercel.app/",
     },
     {
       title: "Pato Restaurent",
@@ -61,9 +61,10 @@ const Projects = () => {
               <div data-aos="fade-up-left">
                 <h2>Projects</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore assumenda eligendi fuga reprehenderit rem
-                  necessitatibus distinctio voluptate nesciunt sed nihil.
+                  I have built an impressive portfolio of projects showcasing
+                  skills in React, JavaScript, Node.js, Express.js, Firebase,
+                  and MongoDB. In this blog post, we'll take a closer look at
+                  some of my projects and explore.
                 </p>
               </div>
             </TrackVisibility>
@@ -71,7 +72,7 @@ const Projects = () => {
               id="controlled-tab-example"
               activeKey={key}
               onSelect={(k) => setKey(k)}
-              className="mb-3"
+              className="mb-4"
             >
               <Tab eventKey="home" title="Tab One">
                 <Row>
@@ -81,20 +82,18 @@ const Projects = () => {
                 </Row>
               </Tab>
               <Tab eventKey="profile" title="Tab Two">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam veniam quo quae consequuntur vitae, ullam esse eum
-                  nulla modi, recusandae voluptas qui, labore beatae cum!
-                  Obcaecati cupiditate perspiciatis corrupti possimus.
-                </p>
+                <Row>
+                  {projects.map((project, idx) => (
+                    <ProjectCard key={idx} {...project} />
+                  ))}
+                </Row>
               </Tab>
               <Tab eventKey="contact" title="Tab Three">
-                <p className="animate__animated animate__bounce">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam veniam quo quae consequuntur vitae, ullam esse eum
-                  nulla modi, recusandae voluptas qui, labore beatae cum!
-                  Obcaecati cupiditate perspiciatis corrupti possimus.
-                </p>
+                <Row>
+                  {projects.map((project, idx) => (
+                    <ProjectCard key={idx} {...project} />
+                  ))}
+                </Row>
               </Tab>
             </Tabs>
           </Col>

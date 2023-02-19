@@ -50,7 +50,7 @@ ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -103,6 +103,8 @@ nav.navbar.scrolled {
 }
 nav.navbar a.navbar-brand {
   width: 9%;
+  font-size: 25px;
+  font-weight: 900;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -157,7 +159,7 @@ span.navbar-text {
 .social-icon a:hover svg {
   color: #000;
 }
-.navbar-text button {
+.navbar-text a.vvd {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -167,11 +169,13 @@ span.navbar-text {
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  border-radius: 5px;
 }
-.navbar-text button span {
+
+.navbar-text a span {
   z-index: 1;
 }
-.navbar-text button::before {
+.navbar-text a.vvd::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -182,10 +186,10 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+.navbar-text a.vvd:hover {
   color: #121212;
 }
-.navbar-text button:hover::before {
+.navbar-text a.vvd:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -284,6 +288,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+.banner button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.banner button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.banner button:hover {
+  color: #121212;
+}
+.banner button:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
 .banner button svg {
   font-size: 25px;
@@ -340,7 +377,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   position: relative;
 }
-.skill-slider .item img {
+.skill-slider .item svg {
   width: 50%;
   margin: 0 auto 15px auto;
 }
@@ -351,7 +388,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
-
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: transparent !important;
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #40bdff !important;
+}
+.skill-slider
+  .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+  left: 0%;
+}
+.skill-slider
+  .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  right: 0%;
+}
+.skill-slider .react-multiple-carousel__arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -460,6 +514,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+  color: #fff;
+  text-decoration: none;
 }
 .proj-txtx h4 {
   font-size: 30px;
