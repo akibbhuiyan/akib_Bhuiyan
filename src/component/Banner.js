@@ -5,6 +5,7 @@ import HeaderImg from "../assets/img/header-img.svg";
 import Typewriter from "typewriter-effect";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="banner" id="home">
@@ -36,9 +37,11 @@ const Banner = () => {
                   Seeking a Web Developer position in a company where I can use
                   my skills and develop my skills.
                 </p>
-                <button onClick={() => console.log("Connect")}>
-                  Let's Connect <FiArrowRightCircle size={"24px"} />
-                </button>
+                <a href="#connect">
+                  <button onClick={() => console.log("Connect")}>
+                    Let's Connect <FiArrowRightCircle size={"24px"} />
+                  </button>
+                </a>
               </div>
             </TrackVisibility>
           </Col>
