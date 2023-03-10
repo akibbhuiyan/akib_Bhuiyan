@@ -1,0 +1,16 @@
+@media (min-width: 576px) {
+  .newsletter-bx.wow.slideInUp {
+    padding: 85px 64px;
+  }
+  .new-email-bx button {
+    padding: 8px 30px;
+  }
+  .skill-bx {
+    padding: 38px;
+  }
+  .banner img {
+    width: 68%;
+    float: right;
+    margin-top: 2rem;
+  }
+}
