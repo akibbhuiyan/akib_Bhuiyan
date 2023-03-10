@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (max-width: 768px) {
   .newsletter-bx.wow.slideInUp {
     padding: 85px 64px;
   }
@@ -8,6 +8,8 @@
   .skill-bx {
     padding: 38px;
   }
+}
+@media (max-width: 575px) {
   .banner img {
     width: 68%;
     float: right;
