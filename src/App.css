@@ -512,6 +512,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.proj-det {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  padding: 20px;
+}
+.details-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+}
+.project-content .link-btn {
+  padding: 9px 16px;
+  background-color: #121212;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -756,3 +792,81 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: rotate(360deg);
   }
 } */
+
+.PhotoView-Portal {
+  z-index: 20000 !important;
+}
+.proj-detContainer {
+  background-color: rgb(22, 24, 26);
+  border: 1px solid #2b2929;
+  padding: 1.25rem !important;
+  border-radius: 10px;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 27px;
+}
+.image-container img {
+  width: 100% !important;
+  height: 100%;
+  cursor: pointer;
+}
+.cardBody .cardTitle {
+  font-size: 1.875rem;
+  font-weight: 800;
+  line-height: 2.25rem;
+}
+.cardBody {
+  padding: 2rem;
+  color: hsl(219, 12.7%, 69%);
+}
+.list-des {
+  padding: 0 11px;
+}
+.list-des li {
+  list-style: none;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  list-style-type: disc;
+  margin-bottom: 0.25rem;
+}
+.tech-p {
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem !important;
+}
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.75rem;
+  margin-top: 0.75rem;
+}
+.technology .tech_btn {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 3px 1.5rem;
+  background-color: rgb(75 85 99);
+  margin: 0.25rem;
+  border-radius: 17px;
+  color: rgb(255, 255, 255);
+}
+.cardAction {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.cardAction a {
+  background-color: hsla(218, 18%, 12%, 1);
+  border-radius: 0.5rem;
+  color: hsl(220, 13%, 69%);
+  padding: 1rem 1.25rem;
+  margin-right: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+.cardAction a:hover {
+  background-color: #1d2024;
+}

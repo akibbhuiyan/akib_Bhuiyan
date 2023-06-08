@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { ImLinkedin2, ImFacebook } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -22,9 +23,12 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home" className="text-white">
+        <Link
+          to="/"
+          className="  navbar-link nav-link  navbar-brand text-white"
+        >
           AKIB
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>

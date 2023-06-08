@@ -5,10 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MediaQuery.css";
+import "react-photo-view/dist/react-photo-view.css";
+import { BrowserRouter } from "react-router-dom";
+import { PhotoProvider } from "react-photo-view";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <PhotoProvider>
+        <App />
+      </PhotoProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
