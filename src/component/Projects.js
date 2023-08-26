@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { ProjectsList1 } from "../db/Database";
+import { ProjectsList1, ProjectsList2 } from "../db/Database";
 
 const Projects = () => {
   const [key, setKey] = useState("home");
@@ -34,14 +34,14 @@ const Projects = () => {
             >
               <Tab eventKey="home" title="Tab One">
                 <Row>
-                  {ProjectsList1.map((project, idx) => (
+                  {ProjectsList1.slice(0, 6).map((project, idx) => (
                     <ProjectCard key={idx} {...project} />
                   ))}
                 </Row>
               </Tab>
               <Tab eventKey="profile" title="Tab Two">
                 <Row>
-                  {ProjectsList1.map((project, idx) => (
+                  {ProjectsList1.slice(6, 11).map((project, idx) => (
                     <ProjectCard key={idx} {...project} />
                   ))}
                 </Row>

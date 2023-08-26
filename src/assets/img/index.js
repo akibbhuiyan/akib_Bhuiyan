@@ -18,6 +18,14 @@ import PatoRes from "./projects/patoRestaurent.png";
 import PatoRes2 from "./projects/patoRestaurent2.png";
 import PatoRes3 from "./projects/patoRestaurent3.png";
 import PatoRes4 from "./projects/patoRestaurent4.png";
+import Promptopia from "./projects/promptopia.png";
+import Promptopia2 from "./projects/promptopia2.png";
+import Promptopia3 from "./projects/promptopia3.png";
+import Promptopia4 from "./projects/promptopia4.png";
+import threads from "./projects/threads.png";
+import threads2 from "./projects/threads2.png";
+import threads3 from "./projects/threads3.png";
+import threads4 from "./projects/threads4.png";
 
 export {
   CreativeAgency,
@@ -40,4 +48,12 @@ export {
   PatoRes2,
   PatoRes3,
   PatoRes4,
+  Promptopia,
+  Promptopia2,
+  Promptopia3,
+  Promptopia4,
+  threads,
+  threads2,
+  threads3,
+  threads4,
 };
